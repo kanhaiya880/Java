@@ -1,5 +1,7 @@
 package StringInJava;
 
+import java.util.Scanner;
+
 public class StringMethods {
     public static void main(String[] args)
     {
@@ -78,6 +80,27 @@ public class StringMethods {
         /// .intern() find in string internal pool
         System.out.println(s14==s15);
         /// output : true
+
+        /// split()- it divides a string int o string array with a defind character in it (alway's returns array of string)
+        String s16="banananna";
+        String[] s16arr=s16.split("n");
+//        for(int i=0;i<s16arr.length;i++)
+//        {
+//            System.out.print(s16arr[i]+" ");
+//        }
+
+        /// String.Join(array)---> it will join array of strings into a single string
+
+        String s17=String.join("-","I","Hope","You","Are","Prepared","For","Test");
+        System.out.println(s17);
+
+        //output : I-Hope-You-Are-Prepared-For-Test
+
+        String words[]={"HARDWORK","IS","THE","KEY","TO","SUCCESS"};
+        s17=String.join(" ",words);
+        System.out.println(s17);
+
+
 
 
     }
